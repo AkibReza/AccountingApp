@@ -1,0 +1,84 @@
+.container {
+  max-width: 72rem;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+  display: block;
+  width: 100%;
+}
+
+.dropdown li a {
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li a:hover {
+  background-color: #f4f4f4;
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./src/bg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.nav a {
+  color: rgb(255, 0, 0);
+  padding: 10px;
+  transition: 0.4s;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: rgb(240, 120, 120);
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 5rem 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  letter-spacing: 5px;
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.hero button {
+  background-color: rgb(219, 44, 44);
+  padding: 1rem;
+  margin: 2rem;
+  transition: 0.3s;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: large;
+}
+
+.hero button:hover {
+  background-color: rgb(219, 44, 44, 0.8);
+}
