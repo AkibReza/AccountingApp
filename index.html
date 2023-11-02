@@ -8,59 +8,205 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <header>
-        <div
-          class="container mx-auto flex content-end pt-4 text-white font-bold justify-end text-xl"
-        >
-          <p>Call Us: 020 7511 8786</p>
+    <header>
+      <div
+        class="container flex content-end pt-4 text-white font-bold justify-end text-xl"
+      >
+        <p>Call Us: 020 7511 8786</p>
+      </div>
+      <nav>
+        <div class="container px-4 flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="#">
+              <img
+                src="./src/logo.png"
+                alt="Website Logo"
+                class="h-16 w-16 mr-2"
+            /></a>
+            <a href="#" class="text-white text-3xl font-bold">MarketingApp</a>
+          </div>
+          <div class="hidden md:flex">
+            <ul class="flex space-x-4 nav">
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">About Us</a></li>
+              <li class="relative">
+                <a href="#" class="text-white">Services</a>
+                <div class="dropdown">
+                  <a href="#" class="block px-4 py-2 text-gray-800"
+                    >Service 1</a
+                  >
+                  <a href="#" class="block px-4 py-2 text-gray-800"
+                    >Service 2</a
+                  >
+                </div>
+              </li>
+              <li><a href="#" class="text-white">Pricing</a></li>
+              <li><a href="#" class="text-white">Contact</a></li>
+              <li><a href="#" class="text-white">My Account</a></li>
+            </ul>
+          </div>
         </div>
-        <nav>
-          <div class="container px-4 mx-auto flex justify-between items-center">
-            <div class="flex items-center">
-              <a href="#">
-                <img
-                  src="./src/logo.png"
-                  alt="Website Logo"
-                  class="h-16 w-16 mr-2"
-              /></a>
-              <a href="#" class="text-white text-3xl font-bold">MarketingApp</a>
-            </div>
-            <div class="hidden md:flex">
-              <ul class="flex space-x-4 nav">
-                <li><a href="#" class="text-white">Home</a></li>
-                <li><a href="#" class="text-white">About Us</a></li>
-                <li class="relative">
-                  <a href="#" class="text-white">Services</a>
-                  <div class="dropdown">
-                    <a href="#" class="block px-4 py-2 text-gray-800"
-                      >Service 1</a
-                    >
-                    <a href="#" class="block px-4 py-2 text-gray-800"
-                      >Service 2</a
-                    >
-                  </div>
-                </li>
-                <li><a href="#" class="text-white">Pricing</a></li>
-                <li><a href="#" class="text-white">Contact</a></li>
-                <li><a href="#" class="text-white">My Account</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <section class="container hero">
-          <h1>MICROTAX ACCOUNTANTS</h1>
-          <p>
-            We are dedicated to provide the best accountancy service that your
-            business needs. We understand what it takes to make a business
-            success and we work through it to achieve it
-          </p>
+      </nav>
+    </header>
+    <section>
+      <div class="container hero">
+        <h1>MICROTAX ACCOUNTANTS</h1>
+        <p>
+          We are dedicated to provide the best accountancy service that your
+          business needs. We understand what it takes to make a business success
+          and we work through it to achieve it
+        </p>
+        <div>
+          <button>Book an Appointment</button>
+          <button>Request a call back</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container flex">
+        <div class="flex flex-col justify-center px-4">
+          <h3 class="text-[#000033] font-bold text-4xl my-12">
+            We comprehend and carry out customer requirements.
+          </h3>
           <div>
-            <button>Book an Appointment</button>
-            <button>Request a call back</button>
+            <a href="#" class="button">CONTACT NOW</a>
           </div>
-        </section>
-      </header>
-    </main>
+        </div>
+        <div class="flex flex-col">
+          <div class="banner-item">
+            <img src="./src/home/banner1.svg" class="icon" alt="1" />
+            <p>
+              We are proud to offer professional and high-quality services to
+              our clients.
+            </p>
+          </div>
+          <div class="banner-item">
+            <img src="./src/home/banner2.svg" class="icon" alt="2" />
+            <p>
+              Special emphasis on support: live chat, email as well as using
+              voice call 24/7
+            </p>
+          </div>
+          <div class="banner-item">
+            <img src="./src/home/banner3.svg" class="icon" alt="3" />
+            <p>
+              We will save you money and ensure that your bookkeeping is neat
+              and clean.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-blue-500 p-4 services">
+        <h3 class="text-white text-center font-bold text-4xl my-12">
+          OUR SERVICES
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 container">
+          <!-- ROW -->
+          <div class="grid-items">
+            <a href="#">
+              <img src="./src/home/logo1.svg" alt="Image 1" class="w-12 h-12" />
+            </a>
+            <p class="font-bold text-lg mt-2">Title 1</p>
+            <p class="text-sm text-gray-800">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="grid-items">
+            <a href="#">
+              <img src="./src/home/logo1.svg" alt="Image 1" class="w-12 h-12" />
+            </a>
+            <p class="font-bold text-lg mt-2">Title 2</p>
+            <p class="text-sm text-gray-800">
+              Vestibulum quis nisi id magna commodo ullamcorper.
+            </p>
+          </div>
+          <div class="grid-items">
+            <a href="#">
+              <img src="./src/home/logo1.svg" alt="Image 1" class="w-12 h-12" />
+            </a>
+            <p class="font-bold text-lg mt-2">Title 3</p>
+            <p class="text-sm text-gray-800">
+              Sed euismod augue quis leo fringilla, at aliquet leo sagittis.
+            </p>
+          </div>
+          <!-- ROW -->
+          <div class="grid-items">
+            <a href="#">
+              <img src="./src/home/logo1.svg" alt="Image 1" class="w-12 h-12" />
+            </a>
+            <p class="font-bold text-lg mt-2">Title 1</p>
+            <p class="text-sm text-gray-800">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="grid-items">
+            <a href="#">
+              <img src="./src/home/logo1.svg" alt="Image 1" class="w-12 h-12" />
+            </a>
+            <p class="font-bold text-lg mt-2">Title 2</p>
+            <p class="text-sm text-gray-800">
+              Vestibulum quis nisi id magna commodo ullamcorper.
+            </p>
+          </div>
+          <div class="grid-items">
+            <a href="#">
+              <img src="./src/home/logo1.svg" alt="Image 1" class="w-12 h-12" />
+            </a>
+            <p class="font-bold text-lg mt-2">Title 3</p>
+            <p class="text-sm text-gray-800">
+              Sed euismod augue quis leo fringilla, at aliquet leo sagittis.
+            </p>
+          </div>
+          <!-- ROW -->
+          <div class="grid-items">
+            <a href="#">
+              <img src="./src/home/logo1.svg" alt="Image 1" class="w-12 h-12" />
+            </a>
+            <p class="font-bold text-lg mt-2">Title 1</p>
+            <p class="text-sm text-gray-800">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="grid-items">
+            <a href="#">
+              <img src="./src/home/logo1.svg" alt="Image 1" class="w-12 h-12" />
+            </a>
+            <p class="font-bold text-lg mt-2">Title 2</p>
+            <p class="text-sm text-gray-800">
+              Vestibulum quis nisi id magna commodo ullamcorper.
+            </p>
+          </div>
+          <div class="grid-items">
+            <a href="#">
+              <img src="./src/home/logo1.svg" alt="Image 1" class="w-12 h-12" />
+            </a>
+            <p class="font-bold text-lg mt-2">Title 3</p>
+            <p class="text-sm text-gray-800">
+              Sed euismod augue quis leo fringilla, at aliquet leo sagittis.
+            </p>
+          </div>
+          <!-- Add more divs for the remaining grid items -->
+        </div>
+        s
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="text-center">WHY CHOOSE US?</h2>
+        <p>
+          Our aim is to ensure your accountancy and taxation matters are handled
+          efficiently and economically with minimum hustle to you. We will work
+          on your business accounts, manage invoices for both purchases and
+          sales, conduct your self assessment and ensure that all other
+          accounting responsibilities are completed and up to date. All of our
+          tax services are designed to provide you with the best available
+          guidance tailored to your specific business, with the goal of keeping
+          your company not just in compliance, but also economically optimized.
+        </p>
+        <div class="grid grid-cols-3"></div>
+      </div>
+    </section>
   </body>
 </html>

@@ -1,13 +1,16 @@
 .container {
   max-width: 72rem;
+  margin: 0 auto;
 }
 
 .dropdown {
   display: none;
+
   position: absolute;
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
 nav ul li:hover .dropdown {
@@ -26,7 +29,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: 10;
 }
 
 .nav a {
@@ -55,7 +57,7 @@ header {
   text-align: center;
   padding: 2rem 5rem 3rem;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+  z-index: 0;
 }
 
 .hero h1 {
@@ -77,3 +79,65 @@ header {
 .hero button:hover {
   background-color: rgb(219, 44, 44, 0.8);
 }
+
+.banner-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: rgb(219, 44, 44);
+  outline: 2px solid black;
+}
+
+.banner-item .icon {
+  height: 4rem;
+  width: 4rem;
+  margin: 0 1rem;
+  fill: white;
+}
+
+.banner-item p {
+  font-weight: bold;
+  color: white;
+}
+
+.button {
+  padding: 10px 20px;
+  outline: 1px solid black;
+  background: white;
+  color: black;
+  display: inline-block;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.button:hover {
+  background: red;
+  color: white;
+}
+
+.grid-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid black;
+  padding: 2rem 1rem;
+}
+
+.grid-items p {
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+
+.services {
+  background-image: linear-gradient(rgba(6, 6, 100, 0.6), rgba(6, 6, 100, 0.6)),
+    url(./src/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* #4b4f58; */
