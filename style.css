@@ -1,3 +1,6 @@
+:root {
+  --red: #cc0022;
+}
 .container {
   max-width: 72rem;
   margin: 0 auto;
@@ -31,6 +34,12 @@ header {
   position: relative;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
 .nav a {
   color: rgb(255, 0, 0);
   padding: 10px;
@@ -44,7 +53,7 @@ header {
 
 .dropdown a:hover {
   background: #ccc;
-  color: red;
+  color: var(--red);
 }
 
 .hero {
@@ -66,17 +75,17 @@ header {
   font-weight: 600;
 }
 
-.hero button {
+.primaryButton {
   background-color: rgb(219, 44, 44);
   padding: 1rem;
-  margin: 2rem;
+  margin: 2rem 0rem;
   transition: 0.3s;
   border-radius: 10px;
   font-weight: 600;
   font-size: large;
 }
 
-.hero button:hover {
+.primaryButton:hover {
   background-color: rgb(219, 44, 44, 0.8);
 }
 
@@ -114,7 +123,7 @@ header {
 }
 
 .button:hover {
-  background: red;
+  background: var(--red);
   color: white;
 }
 
@@ -122,22 +131,121 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 1px solid black;
+  outline: 1px solid rgb(255, 255, 255);
   padding: 2rem 1rem;
 }
 
-.grid-items p {
+.services .grid-items p,
+.services .grid-items a {
   color: white;
   font-size: large;
   text-align: center;
 }
 
 .services {
-  background-image: linear-gradient(rgba(6, 6, 100, 0.6), rgba(6, 6, 100, 0.6)),
+  background-image: linear-gradient(rgba(1, 1, 30, 0.8), rgba(1, 1, 30, 0.8)),
     url(./src/bg2.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* #4b4f58; */
+
+.whyChooseUs {
+  margin: 4rem auto;
+}
+
+.whyChooseUs h2 {
+  color: var(--red);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.parallax {
+  height: 40%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem;
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.description {
+  color: white;
+}
+
+.description h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.review {
+  padding: 4rem 1rem 1rem 1rem;
+}
+
+.solid {
+  background: none;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+.solid p {
+  color: black;
+}
+
+.solid h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-us {
+  color: var(--red);
+}
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./src/bg2.jpg);
+  height: 90vh;
+  color: white;
+}
+
+footer a:hover {
+  color: var(--red);
+  transition: 0.3s;
+}
+
+footer .submit {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  color: black;
+}
+
+footer .submit:hover {
+  background-color: #ddd;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+footer a,
+.footerDesc {
+  margin: 10px;
+}
+
+footer .grid {
+  justify-items: center;
+}
+
+.copyright {
+  background-color: var(--red);
+  color: white;
+  padding: 5px 0px;
+}

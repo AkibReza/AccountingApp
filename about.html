@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <footer>
+      <div class="center footer">
+        <div class="container">
+          <div>
+            <div class="grid grid-cols-3 justify-center">
+              <div class="center flex-col">
+                <a href="#">
+                  <img src="./src/logo.png" alt="Website Logo" class="mr-2"
+                /></a>
+                <p>Head Office:</p>
+                <a href="#">318 Barking Road, London E13 8HL</a>
+              </div>
+
+              <div class="flex">
+                <div class="flex flex-col">
+                  <p class="font-bold text-lg footerDesc">Useful Links</p>
+                  <a href="#">About us</a>
+                  <a href="#">Contact</a>
+                  <a href="#">Book Appointment</a>
+                  <a href="#">My Account</a>
+                </div>
+                <div class="flex flex-col">
+                  <p class="font-bold text-lg footerDesc">Services</p>
+                  <a href="#">Company Formation</a>
+                  <a href="#">Book Keeping</a>
+                  <a href="#">Business Startups</a>
+                  <a href="#">VAT</a>
+                  <a href="#">Account</a>
+                  <a href="#">Payroll & Pensions</a>
+                  <a href="#">Tax Returns</a>
+                  <a href="#">HMRC Investigations</a>
+                  <a href="#">Business Finance</a>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <p class="font-bold text-lg">Request Call</p>
+                <p>Request a call from us to dicuss the details!</p>
+                <form>
+                  <div>
+                    <label for="fname">Name:</label>
+                    <div>
+                      <input type="text" id="fname" name="fname" required />
+                      <br />
+                      <label for="fname">First</label>
+                    </div>
+                    <div>
+                      <input type="text" id="lname" name="lname" required />
+                      <br />
+                      <label for="lname">Last</label>
+                    </div>
+
+                    <label for="email">Email:</label><br />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                    /><br />
+                    <label for="phone">Phone:</label><br />
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                    /><br /><br />
+                    <input type="submit" value="Submit" class="submit" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container flex justify-between">
+          <p class="bold">©2022 MICROTAX ACCOUNTANTS All Rights Reserved.</p>
+          <p>Powered By EXSERTAL</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
